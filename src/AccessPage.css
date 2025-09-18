@@ -1,0 +1,88 @@
+.access-container {
+  margin: 0;
+  padding: 0;
+  background: url('/images/background.PNG') no-repeat center center fixed;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  padding: 20px; /* Add some padding for small screens */
+  box-sizing: border-box;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  /* --- Responsiveness --- */
+  width: 100%; /* Take up available width */
+  max-width: 360px; /* But don't grow larger than 360px */
+  box-sizing: border-box;
+}
+
+.overlay h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.overlay input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  outline: none;
+  transition: box-shadow 0.2s ease-in-out;
+  
+  /* --- Increased Size --- */
+  padding: 16px;
+  font-size: 18px;
+}
+
+.overlay input:focus {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.overlay input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* --- New Button Styles --- */
+.overlay button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  margin-top: 15px; /* Space between input and button */
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #111;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.overlay button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 15px;
+  font-size: 14px;
+  height: 1.2em;
+}
